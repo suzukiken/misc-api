@@ -1,0 +1,6 @@
+type Ipaddress {
+  ipaddress: String
+}
+type Query {
+  getIpaddress: Ipaddress
+}
