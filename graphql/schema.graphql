@@ -1,6 +1,12 @@
 type Ipaddress {
   ipaddress: String
 }
+type CloudFormationExport {
+  stack: String
+  name: String
+  value: String
+}
 type Query {
   getIpaddress: Ipaddress
+  listCloudFormationExports: [ CloudFormationExport ]
 }
